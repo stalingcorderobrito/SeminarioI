@@ -1,5 +1,5 @@
 # Fdb version 4
-["bibtex Guia_SemI"] 0 "Guia_SemI.aux" "Guia_SemI.bbl" "Guia_SemI" 1743503420.82081 0
+["bibtex Guia_SemI"] 0 "Guia_SemI.aux" "Guia_SemI.bbl" "Guia_SemI" 1743503571.19302 0
   "C:/Users/stali/AppData/Local/Programs/MiKTeX/bibtex/bst/bibtex/apalike.bst" 1291972791 24635 604dafcc79f521a11ea73e506e1fbd98 ""
   "Guia_SemI.aux" 0 -1 0 "pdflatex"
   "referencias.bib" 0 -1 0 ""
@@ -7,7 +7,7 @@
   "Guia_SemI.bbl"
   "Guia_SemI.blg"
   (rewritten before read)
-["pdflatex"] 1743503416.78267 "c:/Users/stali/Mi unidad/RD Docencias/Maestría Humanidades/SEMINARIO DE INVESTIGACIÓN CIENTÍFICA/SeminarioI_visualcode/Guia_Proyesto_Semi/Guia_SemI.tex" "Guia_SemI.pdf" "Guia_SemI" 1743503420.82347 0
+["pdflatex"] 1743503566.97862 "c:/Users/stali/Mi unidad/RD Docencias/Maestría Humanidades/SEMINARIO DE INVESTIGACIÓN CIENTÍFICA/SeminarioI_visualcode/Guia_Proyesto_Semi/Guia_SemI.tex" "Guia_SemI.pdf" "Guia_SemI" 1743503571.19523 0
   "C:/Users/stali/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1743463345 81088 29d6fa367ac022d1b69251d68c0742e6 ""
   "C:/Users/stali/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1743191041 12017795 914bc7e7f07e8f499491896bb16ea3b3 ""
   "C:/Users/stali/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc" 1256929440 2375 baa924870cfb487815765f9094cf3728 ""
@@ -176,12 +176,12 @@
   "C:/Users/stali/AppData/Local/Programs/MiKTeX/tex/latex/tools/longtable.sty" 1730400552 15900 3cb191e576c7a313634d2813c55d4bf1 ""
   "C:/Users/stali/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/stali/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1729265222 55384 b454dec21c2d9f45ec0b793f0995b992 ""
-  "Guia_SemI.aux" 1743503419 3599 884aaddc0dd3bcf2574ae0ecb0ba5525 "pdflatex"
+  "Guia_SemI.aux" 1743503569 3599 884aaddc0dd3bcf2574ae0ecb0ba5525 "pdflatex"
   "Guia_SemI.bbl" 0 -1 0 "bibtex Guia_SemI"
-  "Guia_SemI.out" 1743503419 3607 24b491ab614b7a4038066d10c168e7d2 "pdflatex"
-  "Guia_SemI.tex" 1743503415 17577 f20539f9352977f54dce4403db9171a3 ""
-  "Guia_SemI.toc" 1743503419 1596 2ee5f0db1be7670969ccb4041d580e53 "pdflatex"
-  "c:/Users/stali/Mi unidad/RD Docencias/Maestría Humanidades/SEMINARIO DE INVESTIGACIÓN CIENTÍFICA/SeminarioI_visualcode/Guia_Proyesto_Semi/Guia_SemI.tex" 1743503415 17577 f20539f9352977f54dce4403db9171a3 ""
+  "Guia_SemI.out" 1743503569 3607 24b491ab614b7a4038066d10c168e7d2 "pdflatex"
+  "Guia_SemI.tex" 1743503565 17578 28b22967087f2c8fd1bf12d41ddd1c47 ""
+  "Guia_SemI.toc" 1743503569 1596 2ee5f0db1be7670969ccb4041d580e53 "pdflatex"
+  "c:/Users/stali/Mi unidad/RD Docencias/Maestría Humanidades/SEMINARIO DE INVESTIGACIÓN CIENTÍFICA/SeminarioI_visualcode/Guia_Proyesto_Semi/Guia_SemI.tex" 1743503565 17578 28b22967087f2c8fd1bf12d41ddd1c47 ""
   (generated)
   "Guia_SemI.aux"
   "Guia_SemI.log"
