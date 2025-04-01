@@ -1,0 +1,19 @@
+\babel@toc {spanish}{}\relax 
+\contentsline {section}{Resumen Ejecutivo}{2}{section*.2}%
+\contentsline {section}{\numberline {1}Título}{2}{section.1}%
+\contentsline {section}{\numberline {2}Problema de Investigación}{2}{section.2}%
+\contentsline {section}{\numberline {3}Justificación y Delimitación de la Investigación}{2}{section.3}%
+\contentsline {section}{\numberline {4}Beneficios para el País y Beneficiarios}{2}{section.4}%
+\contentsline {section}{\numberline {5}Impacto Esperado}{2}{section.5}%
+\contentsline {section}{\numberline {6}Objetivos de la Investigación}{2}{section.6}%
+\contentsline {subsection}{Objetivo General}{2}{section*.3}%
+\contentsline {subsection}{Objetivos Específicos}{2}{section*.4}%
+\contentsline {section}{\numberline {7}Marco Teórico}{3}{section.7}%
+\contentsline {section}{\numberline {8}Método}{3}{section.8}%
+\contentsline {section}{\numberline {9}Productos o Resultados}{3}{section.9}%
+\contentsline {section}{\numberline {10}Estrategia de Divulgación de los Resultados}{3}{section.10}%
+\contentsline {section}{\numberline {11}Cronograma de Actividades}{3}{section.11}%
+\contentsline {section}{\numberline {12}Presupuesto (en Balboas)}{4}{section.12}%
+\contentsline {section}{\numberline {13}Formato para el Documento en General}{4}{section.13}%
+\contentsline {section}{\numberline {14}Bibliografía}{4}{section.14}%
+\contentsline {section}{\numberline {15}Anexos}{4}{section.15}%

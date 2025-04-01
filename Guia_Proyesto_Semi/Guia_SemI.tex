@@ -1,0 +1,383 @@
+\documentclass[12pt,a4paper]{article}
+
+% Paquetes básicos
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{setspace}             % Para interlineado
+\usepackage{geometry}             % Para márgenes
+\usepackage{fancyhdr}             % Encabezados y pies de página
+\usepackage{graphicx}             % Inclusión de gráficos
+\usepackage{array}                % Mejoras en tablas
+\usepackage{booktabs}             % Tablas profesionales
+\usepackage{longtable}            % Tablas que se extienden en varias páginas
+\usepackage{hyperref}             % Hipervínculos
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,    % Enlaces coloreados, sin recuadros
+    linkcolor=black,     % Color de los enlaces internos
+    urlcolor=blue,      % Color de las URL
+    citecolor=blue,     % Color de las citas
+    pdfborder={0 0 0}   % Quitar el borde del enlace
+}
+\usepackage{tikz}
+\usepackage{eso-pic} % Permite agregar elementos a todas las páginas
+\usetikzlibrary{calc} % Necesario para operaciones con coordenadas
+% Configuración de márgenes
+\geometry{
+  top=2.5cm,
+  bottom=2.5cm,
+  left=3cm,
+  right=2.5cm,
+}
+\usepackage{everypage}  % Permite ejecutar código en cada página
+\usepackage{setspace}
+\usepackage{booktabs}
+\usepackage{caption}
+\usepackage{capt-of} % Permite añadir captions fuera de un entorno float
+\usepackage{float}
+
+\AddEverypageHook{%
+  \begin{tikzpicture}[remember picture, overlay]
+    % Línea azul a 1 cm del borde izquierdo
+    \draw[blue, line width=2pt] 
+      ($(current page.north west)+(1cm,0)$) -- 
+      ($(current page.south west)+(1cm,0)$);
+    % Línea roja a 1 cm del borde derecho
+    \draw[red, line width=2pt] 
+      ($(current page.north east)+(-1cm,0)$) -- 
+      ($(current page.south east)+(-1cm,0)$);
+  \end{tikzpicture}%
+}
+
+% Interlineado de 1.5
+\onehalfspacing
+
+% Encabezado y pie de página
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[R]{\thepage}
+\fancyhead[L]{Seminario de Investigación I}
+
+% Título del documento
+\title{\textbf{GUÍA PARA ELABORAR EL ANTEPROYECTO DE INVESTIGACIÓN CIENTÍFICA}}
+\author{Mtro. Staling Cordero Brito \\ scordero48@uasd.edu.do}
+\date{\today}
+
+
+
+\begin{document}
+
+
+\maketitle
+\thispagestyle{empty}
+
+\tableofcontents
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 1. Resumen
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Resumen}
+\addcontentsline{toc}{section}{Resumen}
+
+\noindent
+\textit{El resumen debe incluir: planteamiento del problema, objetivos, impacto esperado, métodos o técnicas, productos esperados y conclusiones. No debe exceder las 300 palabras a espacio y medio (\(1\frac{1}{2}\))
+.}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 2. Título
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Título}
+ \noindent
+El título debe expresar la idea de forma clara, sencilla y debe ser lo mas sucinto posible.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 3. Problema de Investigación
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Problema de Investigación}
+% Describa las causas, antecedentes, hechos, dimensiones, localización y propuesta de solución.
+\noindent
+Al definir el problema de investigación debe responder las causas del problema; los
+antecedentes del problema \textcolor{red}{(no confundir con los antecedentes del marco teórico)}; los hechos, el tamaño, el lugar donde ocurre el problema y cómo
+propone resolver o indagar el problema planteado; quienes lo harán y los posibles
+colaboradores [en ocasiones se cierra el último párrafo con la pregunta de
+investigación y el objetivo de la investigación que debe responder a la pregunta
+planteada].
+
+\href{file:///C:/Users/stali/Mi%20unidad/RD%20Docencias/Maestr%C3%ADa%20Humanidades/SEMINARIO%20DE%20INVESTIGACI%C3%93N%20CIENT%C3%8DFICA/SeminarioI_visualcode/Archivosgenerales/comoconvertirseeninvestigador.pdf}{Ejemplo: Cómo convertirse en hábil investigador}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 4. Justificación y Delimitación de la Investigación
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Justificación y Delimitación de la Investigación}
+% Argumente la relevancia de la investigación, validando con datos, fuentes estadísticas y delimitando el alcance.
+\noindent
+En la justificación debe declarar porque va a desarrollar la investigación y explicarlo
+con argumentos lógicos. Se debe validar la información con fuentes de organismos
+involucrados en el problema. Validar sus aseveraciones con datos estadísticos y/o
+indicadores que reflejan el estudio de la situación a desarrollar.
+La delimitación se refiere hasta donde abarca el estudio de investigación, el contexto,
+dependiendo de sus recursos.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 5. Beneficios para el País y Beneficiarios
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Beneficios para el País y Beneficiarios (opcional)}
+% Detalle los beneficios específicos para el país y los destinatarios (población, organismos, etc.).
+\noindent
+Describa los posibles beneficios para el país y los beneficiarios. Debe señalar a
+quienes va dirigido el beneficio: población, personas, organismos, etc. Debe ser
+específicos, evitar utilizar términos globalizando el beneficio.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 6. Impacto Esperado
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Impacto Esperado}
+% Defina el impacto tangible: económico, ambiental, social, etc., citando fuentes si se cuantifica.
+\noindent
+Es lo que se espera de forma tangible como resultado de su investigación:
+económicos, ambientales, sociales, etc. Recurra a fuentes bibliográficas si va a
+cuantificarlo.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 7. Preguntas de Investigación
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Preguntas de Investigación}
+\noindent
+Son las interrogantes clave que guían un estudio y delimitan el problema que se quiere explorar. Estas preguntas ayudan a enfocar la investigación y determinar qué datos se necesitan recolectar y analizar.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 7. Objetivos de la Investigación
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Objetivos de la Investigación}
+\noindent
+Es el propósito de la investigación; convertir el problema en algo positivo y debe
+contener el lugar a desarrollarse. Debe utilizar un solo verbo en infinitivo (describir,
+comparar, evaluar, explicar, entre otros) por objetivo descrito.
+% Objetivo General y Objetivos Específicos, redactados en verbo infinitivo.
+
+\subsection*{Objetivo General}
+\addcontentsline{toc}{subsection}{Objetivo General}
+\noindent
+El objetivo general debe
+indicar el alcance del proyecto, y responder a “que se espera conseguir”.
+
+\subsection*{Objetivos Específicos}
+\addcontentsline{toc}{subsection}{Objetivos Específicos}
+\noindent
+Describe los fines que llevan a desarrollar el objetivo general en cada una de las
+etapas de la investigación y deben estar relacionados entre sí, para lograr el objetivo
+general. Deben ser medibles, alcanzables y viables. No son procedimientos o
+actividades, pero sin embargo las actividades deben estar en correspondencia con
+los objetivos. Los objetivos deben redactarse en verbos infinitivos, por ejemplo:
+analizar, desarrollar, aplicar, etc. Describa tres a cinco objetivos específicos.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 8. Marco Teórico
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Marco Teórico}
+% Presente métodos, técnicas y materiales de estudios anteriores, con sus citas bibliográficas correspondientes.
+\noindent
+Esta sección debe presentar los métodos, técnicas y materiales utilizados en
+estudios anteriores, que sustenten los métodos que se van a aplicar en su proyecto
+de estudio de investigación. Se deben hacer las citas bibliográficas de las técnicas a emplearse. Se recomienda utilizar los artículos con no más de 5 a 10 años que se
+publican en revistas especializadas o indexadas, como Journals, diagnósticos
+nacionales / regionales, políticas públicas.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 9. Método
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Métodología}
+% Describa materiales, métodos, técnicas, procedimientos y actividades por etapa.
+\noindent
+En esta sección describa como se alcanzará los objetivos especificados hasta los
+resultados, con una estructura lógica que incluya: tipo de invesitgacion: enfoque, diseño, alcance; materiales, métodos, técnicas y
+procedimientos de muestreo, por las actividades a desarrollar en cada etapa o fase de la propuesta de
+investigación. Describa los materiales experimentales a utilizar y explique los métodos a
+emplear en cada una de las etapas del proyecto. Una de las fases debe describir los
+aspectos éticos que serán contemplados en la investigación, así como la normativa que
+la regula.\\
+
+Las actividades (gramaticalmente corresponden a sustantivos y no a verbos), deben
+responder a preguntas sobre el desarrollo de la metodología: “dónde”, “cuándo” y “cómo”
+se va a realizar la actividad, involucrando materiales, métodos, técnicas y
+procedimientos. Se agrupan en función de las etapas que se ha planeado desarrollar en
+el proyecto.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 10. Productos o Resultados
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Productos o Resultados}
+% Enumere los productos tangibles (científicos, técnicos, entregables) esperados.
+\noindent
+Son los tangibles que se espera lograr a través de las actividades a realizar y deben estar
+articulados a los objetivos planteados. Debe listarlos. Se conocen
+también como “Resultado“ o “Entregables”.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 11. Estrategia de Divulgación
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Estrategia de Divulgación de los Resultados (opcional)}
+% Detalle las herramientas para la divulgación: congresos, revistas, libros, foros, etc.
+\noindent
+Algunas de estas herramientas son: publicación en congresos científicos, revistas
+indexadas, libros, foros, talleres, sitio web, folletos, capacitaciones, etc. \\
+
+\noindent
+En esta sección debe indicar que herramientas utilizará, para comunicar los resultados
+de su investigación. Tanto el ámbito científico como al público en general.
+Incluir herramientas de protección intelectual cuando se amerite (patentes, protección
+vegetal, etc).
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 12. Cronograma de Actividades
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Cronograma de Actividades}
+\noindent
+Es una representación gráfica de en qué espacio temporal se desarrollarán las
+actividades definidas en la metodología.\\
+
+\noindent
+La programación debe mostrar los meses a utilizar en cada etapa del proyecto.
+
+% Se recomienda representar de forma gráfica (tabla) el desarrollo de actividades en el tiempo.
+\begin{table}[H] % htbp: aquí, arriba, abajo, página separada
+    
+    \centering
+    \begin{tabular}{lcccccccccccc} % Sin líneas verticales
+        \toprule
+        \textbf{Actividad} & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 & 12 \\
+        \midrule
+        \textbf{Fase I}  & X & X &  &  &  &  &  &  &  &  &  &  \\
+        \textbf{Fase II} &  &  & X & X &  &  &  &  &  &  &  &  \\
+        \bottomrule
+    \end{tabular}
+    \caption{Cronograma de actividades} % El caption va arriba
+    \label{tab:cronograma}
+\end{table}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 13. Presupuesto (en Balboas)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Presupuesto}
+% Elaborar una tabla con rubros, recursos, egresos, inversión, etc.
+
+\begin{table}[h]
+    \caption{Presupuesto del Proyecto}
+    \label{tab:presupuesto}
+    \centering
+    \resizebox{\textwidth}{!}{%
+      \begin{tabular}{p{5cm}p{3cm}p{3cm}p{3cm}p{3.5cm}}
+          \toprule
+          \textbf{Rubros} & \textbf{Ingreso} & \textbf{Egreso} & \textbf{Inversión (RD/.0000.00)} & \textbf{Etapa del Proyecto (I, II, III, ...)} \\
+          \midrule
+          Recursos (Equipos, materiales)        &  &  &  &  \\
+          Total                                 &  &  &  &  \\
+          \hline
+          Recursos humanos (capacitación)       &  &  &  &  \\
+          Total                                 &  &  &  &  \\
+          \hline
+          Salidas de campo                      &  &  &  &  \\
+          Total                                 &  &  &  &  \\
+          \hline
+          Material bibliográfico                &  &  &  &  \\
+          Total                                 &  &  &  &  \\
+          \hline
+          Divulgaciones de resultados (publicaciones) &  &  &  &  \\
+          Total                                 &  &  &  &  \\
+          \hline
+          Viajes internos o internacionales     &  &  &  &  \\
+          Total                                 &  &  &  &  \\
+          \hline
+          \textbf{Costo Total}                  &  &  &  &  \\
+          \bottomrule
+      \end{tabular}%
+    }
+\end{table}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 14. Formato para el Documento en General
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Formato para el Documento en General: Reglamento de Posgrado de la Universidad Autónoma de Santo Domingo (UASD)}
+
+1. La portada, al igual que los demás componentes del informe tendrá una dimensión de 8½”
+por 11” (ocho y media por once pulgadas) (formato tipo carta) y tendrá en el siguiente
+orden:
+
+
+\begin{itemize}
+    \item Presentación centrada del Escudo de la UASD, con una dimensión de uno y medio por uno
+    y medio pulgadas (1 ½ x 1 ½ pulgadas).
+    
+    \item Debajo del Escudo (en letras Arial o Times New Roman, tamaño 10, centrada) la leyenda:
+Primada de América y debajo de esta leyenda otra que dice: Fundada el 28 de octubre del
+año 1538.
+\item El nombre de la Universidad Autónoma de Santo Domingo en letra Old English Text MT,
+negrita y tamaño de letras 14, centrada.
+\item Nombre de la Facultad a la que pertenece la Escuela que auspicia el programa de postgrado
+ que corresponde la tesis, centrado y tamaño de letras 14.
+ \item La Dirección de Postgrado y Educación Permanente de la Facultad centrado y tamaño de
+letras 12, en letras Arial o Times New Roman.
+\item Escuela que auspicia el programa de postgrado a que corresponde la tesis, centrado y
+tamaño de letras 12.
+\item Siglas de la UASD, separado por un guion del lugar donde se desarrolló el programa de
+postgrado (UASD-Sede, UASD-Recinto, UASD-Centro y UASD-Subcentro
+Universitario). Centrado y tamaño de letras 14.
+\item Postgrado por el que opta (Sin negritas el enunciado y negritas el postgrado, letras 12,
+centrado).
+\item Título de la tesis y Subtitulo (si es necesario). El enunciado sin negritas y el título en
+negritas, centrado y tamaño de letras 16.
+\item Nombre del sustentante. El enunciado sin negritas y el nombre en negritas, tamaño de letras
+12.
+\item Nombre del o los asesores, enunciado sin negrita, nombre(s) en negritas, tamaño de letras
+12, centrado.
+
+\item Lugar y Fecha de presentación, tamaño de letras 12, centrado.
+
+    \item \textbf{Espaciado:} 1.5 (espacio y medio).
+    \item \textbf{Paginación:} Números arábigos en la esquina superior derecha.
+    \item \textbf{Citas:} Utilizar un estilo de citación único (ej. APA, IEEE, etc.) y que todas las fuentes citadas en el texto aparezcan en la bibliografía.
+    \item \textbf{Cuadros, Tablas y Gráficos:} Cada uno debe tener numeración, título (en cursiva para el título, no para la palabra “Cuadro”, “Tabla” o “Gráfico”) y la fuente.
+\end{itemize}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 15. Bibliografía
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Bibliografía}
+% Incluya únicamente las fuentes citadas en el documento. Use el estilo elegido de forma consistente.
+\bibliographystyle{apalike} % O el estilo requerido
+\bibliography{referencias} % Asegúrese de tener un archivo 'referencias.bib'
+
+\noindent
+Todas las citas realizadas en el documento deben estar en la bibliografía (y dentro de ese apartado, solo las citas que aparecen en el texto). Al utilizar un estilo de cita debe ser el mismo para
+la bibliografía. Debe cerciorarse de que cada fuente referida aparece en ambos
+lugares, y que la cita en el texto y la entrada en la lista de referencias son idénticas en
+su forma de escritura y en el año. El estilo es el formato APA (American Psychological Association) 7ª edición.\\
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 16. Anexos
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Anexos}
+% Incluir certificados, modelos de consentimiento informado, cartas, permisos e instrumentos de recolección de datos.
+\noindent
+En este apartado deben ir los certificados o certificaciones que amerite el estudio, el
+modelo de consentimiento y/o asentimiento informado que se utilizará, las cartas y
+permisos que se requieran, así como los instrumentos, test, u otros con los que se
+recogerán los datos y/o muestras durante la investigación
+
+\end{document}

@@ -1,0 +1,276 @@
+\documentclass[12pt,a4paper]{article}
+
+% Paquetes básicos
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{setspace}             % Para interlineado
+\usepackage{geometry}             % Para márgenes
+\usepackage{fancyhdr}             % Encabezados y pies de página
+\usepackage{graphicx}             % Inclusión de gráficos
+\usepackage{array}                % Mejoras en tablas
+\usepackage{booktabs}             % Tablas profesionales
+\usepackage{longtable}            % Tablas que se extienden en varias páginas
+\usepackage{hyperref}             % Hipervínculos
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    urlcolor=blue,
+    citecolor=blue,
+    pdfborder={0 0 0}
+}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\usepackage{eso-pic}              % Para agregar elementos a todas las páginas
+\usepackage{everypage}            % Para ejecutar código en cada página
+
+% Configuración de márgenes
+\geometry{
+  top=2.5cm,
+  bottom=2.5cm,
+  left=3cm,
+  right=2.5cm,
+}
+
+% Hook para agregar líneas verticales en cada página
+\AddEverypageHook{%
+  \begin{tikzpicture}[remember picture, overlay]
+    % Línea azul a 1 cm del borde izquierdo
+    \draw[blue, line width=2pt] 
+      ($(current page.north west)+(1cm,0)$) -- 
+      ($(current page.south west)+(1cm,0)$);
+    % Línea roja a 1 cm del borde derecho
+    \draw[red, line width=2pt] 
+      ($(current page.north east)+(-1cm,0)$) -- 
+      ($(current page.south east)+(-1cm,0)$);
+  \end{tikzpicture}%
+}
+
+% Interlineado de 1.5
+\onehalfspacing
+
+% Encabezado y pie de página (se activarán en el documento, pero no en la portada)
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[R]{\thepage}
+\fancyhead[L]{Seminario de Investigación}
+
+% Título del documento (información para la portada)
+\title{\textbf{Plantilla para Anteproyecto de Investigación}}
+\author{Nombre del Investigador \\ Facultad/Institución}
+\date{\today}
+
+\begin{document}
+
+%--------------------------------------------------
+% Página de Portada Profesional
+%--------------------------------------------------
+\begin{titlepage}
+  \thispagestyle{empty}  % Quitar encabezados y pies
+  \begin{center}
+    \vspace*{1cm}
+    % Logo (ajusta la ruta y dimensiones)
+    \includegraphics[width=0.2\textwidth]{logo.png}\\[1cm]
+    
+    % Nombre de la institución o universidad
+    {\Large \textbf{Nombre de la Universidad o Institución}}\\[0.5cm]
+    
+    % Título del documento o proyecto
+    {\Huge \bfseries \thetitle}\\[1.5cm]
+    
+    % Información del autor
+    {\Large \textbf{\theauthor}}\\[0.5cm]
+    
+    % Datos adicionales (opcional)
+    {\large Departamento o Carrera}\\[0.5cm]
+    
+    % Fecha
+    {\large \thedate}\\[2cm]
+    
+    % Línea decorativa (opcional)
+    \begin{tikzpicture}
+      \draw[blue, line width=1.5pt] (0,0) -- (6,0);
+      \draw[red, line width=1.5pt] (0,-0.3) -- (6,-0.3);
+    \end{tikzpicture}
+    
+    \vfill
+    % Pie de página (opcional)
+    {\small Este anteproyecto ha sido preparado para el Seminario de Investigación}\\
+    {\small Facultad/Departamento de [Nombre del Departamento]}
+  \end{center}
+\end{titlepage}
+
+%--------------------------------------------------
+% Inicio del Documento Principal
+%--------------------------------------------------
+\maketitle
+\thispagestyle{empty}  % La página con el índice puede tener estilo distinto si se prefiere
+
+\tableofcontents
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 1. Resumen Ejecutivo
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Resumen Ejecutivo}
+\addcontentsline{toc}{section}{Resumen Ejecutivo}
+\noindent
+\textit{Escriba aquí el resumen ejecutivo.}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 2. Título
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Título}
+\noindent
+\textbf{Título:} \\
+\textit{Escriba el título de su investigación.}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 3. Problema de Investigación
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Problema de Investigación}
+\noindent
+\textbf{Planteamiento:} \\
+\textit{Describa detalladamente el problema a investigar.}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 4. Justificación y Delimitación de la Investigación
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Justificación y Delimitación de la Investigación}
+\noindent
+\textbf{Justificación:} \\
+\textit{Explique el porqué de la investigación, sustentando con fuentes y datos.} \\[1ex]
+\textbf{Delimitación:} \\
+\textit{Indique el alcance y los límites del estudio.}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 5. Beneficios para el País y Beneficiarios
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Beneficios para el País y Beneficiarios}
+\noindent
+\textit{Describa los beneficios esperados y a quiénes están dirigidos.}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 6. Impacto Esperado
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Impacto Esperado}
+\noindent
+\textit{Escriba el impacto que se espera lograr con la investigación.}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 7. Objetivos de la Investigación
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Objetivos de la Investigación}
+\subsection*{Objetivo General}
+\addcontentsline{toc}{subsection}{Objetivo General}
+\noindent
+\textit{Defina el propósito global de la investigación.}
+
+\subsection*{Objetivos Específicos}
+\addcontentsline{toc}{subsection}{Objetivos Específicos}
+\begin{itemize}
+    \item \textit{Objetivo 1: Describir, analizar, evaluar, etc. (según corresponda).}
+    \item \textit{Objetivo 2: Describir, analizar, evaluar, etc.}
+    \item \textit{Objetivo 3: Describir, analizar, evaluar, etc.}
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 8. Marco Teórico
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Marco Teórico}
+\noindent
+\textit{Describa el estado del arte y la fundamentación teórica que sustenta la investigación.}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 9. Método
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Método}
+\noindent
+\textbf{Materiales:} \textit{Especifique los materiales experimentales.} \\[1ex]
+\textbf{Métodos y Técnicas:} \textit{Describa el método a emplear en cada fase del proyecto.} \\[1ex]
+\textbf{Procedimientos y Actividades:} \textit{Explique detalladamente cómo, dónde y cuándo se realizarán las actividades.} \\[1ex]
+\textbf{Aspectos Éticos:} \textit{Incorpore la normativa y consideraciones éticas pertinentes.}
+
+\noindent
+\textbf{Línea de Investigación:} \\
+\textit{Indique la línea y área de estudio, vinculada a las líneas aprobadas.}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 10. Productos o Resultados
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Productos o Resultados}
+\noindent
+\begin{enumerate}
+    \item \textit{Producto 1}
+    \item \textit{Producto 2}
+    \item \textit{Producto 3}
+\end{enumerate}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 11. Estrategia de Divulgación
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Estrategia de Divulgación de los Resultados}
+\noindent
+\textit{Explique cómo se comunicarán los resultados, tanto al ámbito científico como al público en general.}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 12. Cronograma de Actividades
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Cronograma de Actividades}
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\hline
+\textbf{Actividad} & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 & 12 \\
+\hline
+\textbf{Fase I} & X & X &  &  &  &  &  &  &  &  &  &  \\
+\hline
+\textbf{Fase II} &  &  & X & X &  &  &  &  &  &  &  &  \\
+\hline
+\end{tabular}
+\end{center}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 13. Presupuesto (en Balboas)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Presupuesto (en Balboas)}
+\begin{center}
+\begin{tabular}{|l|c|c|c|c|}
+\hline
+\textbf{Etapa del Proyecto} & \textbf{Recursos (Equipos/Materiales)} & \textbf{Recursos Humanos} & \textbf{Salidas de Campo} & \textbf{Total} \\
+\hline
+I & B/ \underline{\hspace{1.5cm}} & B/ \underline{\hspace{1.5cm}} & B/ \underline{\hspace{1.5cm}} & B/ \underline{\hspace{1.5cm}} \\
+\hline
+II & B/ \underline{\hspace{1.5cm}} & B/ \underline{\hspace{1.5cm}} & B/ \underline{\hspace{1.5cm}} & B/ \underline{\hspace{1.5cm}} \\
+\hline
+\end{tabular}
+\end{center}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 14. Formato para el Documento en General
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Formato para el Documento en General}
+\begin{itemize}
+    \item \textbf{Márgenes:} Superior, inferior y derecha: 2.5 cm; izquierda: 3 cm.
+    \item \textbf{Fuente:} Arial, 12 pt.
+    \item \textbf{Espaciado:} 1.5 (espacio y medio).
+    \item \textbf{Paginación:} Números arábigos en la esquina superior derecha.
+    \item \textbf{Citas:} Utilizar un estilo de citación único (ej. APA, IEEE, etc.) y que todas las fuentes citadas en el texto aparezcan en la bibliografía.
+    \item \textbf{Cuadros, Tablas y Gráficos:} Cada uno debe tener numeración, título (en cursiva para el título, no para la palabra “Cuadro”, “Tabla” o “Gráfico”) y la fuente.
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 15. Bibliografía
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Bibliografía}
+\bibliographystyle{apalike}
+\bibliography{referencias}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 16. Anexos
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Anexos}
+\noindent
+\textit{Adjunte en esta sección todos los documentos complementarios requeridos.}
+
+\end{document}
