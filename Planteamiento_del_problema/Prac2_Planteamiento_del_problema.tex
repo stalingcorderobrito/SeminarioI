@@ -1,0 +1,121 @@
+\documentclass[12pt,a4paper]{article}
+
+% Paquetes básicos
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{setspace}             % Para interlineado
+\usepackage{geometry}             % Para márgenes
+\usepackage{fancyhdr}             % Encabezados y pies de página
+\usepackage{graphicx}             % Inclusión de gráficos
+\usepackage{array}                % Mejoras en tablas
+\usepackage{booktabs}             % Tablas profesionales
+\usepackage{longtable}            % Tablas que se extienden en varias páginas
+\usepackage{hyperref}             % Hipervínculos
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,    % Enlaces coloreados, sin recuadros
+    linkcolor=black,     % Color de los enlaces internos
+    urlcolor=blue,      % Color de las URL
+    citecolor=blue,     % Color de las citas
+    pdfborder={0 0 0}   % Quitar el borde del enlace
+}
+\usepackage{tikz}
+\usepackage{eso-pic} % Permite agregar elementos a todas las páginas
+\usetikzlibrary{calc} % Necesario para operaciones con coordenadas
+% Configuración de márgenes
+\geometry{
+  top=2.5cm,
+  bottom=2.5cm,
+  left=3cm,
+  right=2.5cm,
+}
+\usepackage{everypage}  % Permite ejecutar código en cada página
+\usepackage{setspace}
+\usepackage{booktabs}
+\usepackage{caption}
+\usepackage{capt-of} % Permite añadir captions fuera de un entorno float
+\usepackage{float}
+\usepackage{enumitem}
+\usepackage{fontspec}
+\setmainfont{Noto Sans} % O la fuente principal que prefieras
+\newfontfamily\emoji{Noto Color Emoji} % Fuente que soporte emojis
+
+
+\title{🔍 Dinámica: ``Detectives del Problema'' \\ \small{(Versión Extendida con Sistematización)}}
+\author{Profesor: [Tu Nombre]}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section*{🎯 Objetivo}
+Aprender a identificar, delimitar y redactar adecuadamente un problema de investigación, e integrar un apartado de sistematización para explorar preguntas complementarias que enriquezcan el análisis.
+
+\section*{👥 Modalidad y ⏱️ Duración}
+\begin{itemize}[noitemsep]
+    \item \textbf{Modalidad:} Virtual – Trabajo en grupos.
+    \item \textbf{Duración:} 70 minutos (incluye tiempo adicional para la sistematización).
+\end{itemize}
+
+\section*{📌 Situación General}
+En una universidad pública se ha observado una baja participación de los estudiantes en actividades de investigación durante los primeros años de carrera.
+
+\section*{🧠 Dinámica de la Actividad}
+
+\subsection*{I. Planteamiento del Problema (Ejemplo Resuelto – Grupo Modelo)}
+
+\begin{tabular}{@{}p{5cm}p{10cm}@{}}
+\toprule
+\textbf{Elemento} & \textbf{Ejemplo del Grupo Modelo} \\ \midrule
+\textbf{Tema General} & Participación estudiantil en investigación universitaria \\[1mm]
+\textbf{Delimitación del Contexto} & Estudiantes de primer y segundo año de la Facultad de Ciencias de una universidad pública en Santo Domingo \\[1mm]
+\textbf{Antecedentes} & Estudios breves indican que la falta de motivación y la percepción de que la investigación es exclusiva de estudiantes avanzados inciden en la baja participación. \\[1mm]
+\textbf{Justificación} & Comprender las causas de la escasa vinculación temprana a la investigación es fundamental para diseñar estrategias que fortalezcan la formación científica desde los primeros años de carrera. \\[1mm]
+\textbf{Relevancia y Pertinencia} & \begin{itemize}[noitemsep]
+    \item \textbf{Relevancia:} Contribuye a mejorar la estructura curricular y la difusión de oportunidades investigativas.
+    \item \textbf{Pertinencia:} Permite implementar cambios que optimicen la vinculación temprana en proyectos de investigación, generando un impacto positivo en la producción científica.
+\end{itemize} \\[1mm]
+\textbf{Causas del Problema} & \begin{itemize}[noitemsep]
+    \item Falta de motivación.
+    \item Poca difusión de oportunidades.
+    \item Percepción de que la investigación es solo para estudiantes avanzados.
+    \item Ausencia de asignaturas prácticas tempranas.
+\end{itemize} \\[1mm]
+\textbf{Consecuencias} & \begin{itemize}[noitemsep]
+    \item Escasa formación investigativa en etapas tempranas.
+    \item Menor producción científica estudiantil.
+    \item Dificultad para cumplir con los objetivos curriculares.
+\end{itemize} \\[1mm]
+\textbf{Formulación del Problema} & ¿Cuáles son los factores que inciden en la baja participación en actividades de investigación de los estudiantes de primer y segundo año de la Facultad de Ciencias en una universidad pública en Santo Domingo? \\[1mm]
+\textbf{Hipótesis} & La baja participación se debe a una combinación de falta de incentivos académicos, inadecuada difusión de oportunidades y una percepción negativa de la investigación. \\[1mm]
+\textbf{Viabilidad} & Se cuenta con acceso a fuentes internas, la posibilidad de aplicar encuestas y entrevistas, y respaldo institucional para la recolección y análisis de datos. \\ \bottomrule
+\end{tabular}
+
+\subsection*{II. Apartado de Sistematización}
+
+En este apartado se busca generar preguntas adicionales que desglosen y profundicen en distintos aspectos del problema. A continuación, se presenta un ejemplo:
+
+\bigskip
+
+\begin{tabular}{@{}p{5cm}p{10cm}@{}}
+\toprule
+\textbf{Aspecto a Investigar} & \textbf{Pregunta de Investigación Sistematizada} \\ \midrule
+Factores Motivacionales & ¿Cómo influye la falta de incentivos académicos en la motivación de los estudiantes para participar en actividades de investigación? \\[2mm]
+Difusión y Comunicación & ¿De qué manera afecta la comunicación institucional la percepción de las oportunidades de investigación entre los estudiantes? \\[2mm]
+Percepción sobre la Investigación & ¿Cuál es la percepción de los estudiantes sobre la investigación en comparación con el aprendizaje teórico? \\[2mm]
+Impacto Curricular & ¿Cómo se relaciona la estructura curricular de la Facultad de Ciencias con la baja participación en proyectos de investigación? \\ \bottomrule
+\end{tabular}
+
+\section*{💬 Estructura y Ejecución de la Dinámica en Clase}
+\begin{enumerate}[label=\textbf{\arabic*.}, noitemsep]
+    \item \textbf{Contextualización (10 min):} Explicar qué es un problema de investigación y la importancia de su sistematización, mostrando ejemplos de formulación y de preguntas sistematizadas.
+    \item \textbf{Presentación de la Situación (5 min):} Plantear la situación general y consultar a los estudiantes si identifican otros problemas o aspectos relevantes.
+    \item \textbf{Trabajo en Grupos: ``Detectives del Problema'' (25 min):} Cada grupo delimita el contexto, identifica causas y consecuencias, formula el problema y redacta una justificación breve utilizando la plantilla.
+    \item \textbf{Incorporación de la Sistematización (20 min):} Una vez formulado el problema, cada grupo debe generar al menos tres preguntas de sistematización que profundicen en diferentes aspectos del problema.
+    \item \textbf{Exposición y Retroalimentación (10 min):} Cada grupo comparte su formulación y sus preguntas sistematizadas. Se brinda retroalimentación colectiva, destacando buenas prácticas y sugerencias de mejora.
+\end{enumerate}
+
+\end{document}

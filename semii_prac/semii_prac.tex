@@ -1,0 +1,105 @@
+
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\geometry{margin=1in}
+\usepackage{enumitem}
+\usepackage{tcolorbox} % Para cajas de color
+\usepackage{xcolor}    % Para definir colores
+\usepackage{hyperref}  % Para enlaces en el documento
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+}
+\title{\textbf{Práctica 1 de Seminario II (50 puntos) \\ Marco teórico: Revisión Sistemática de Literatura (SLR)}}
+\author{Mtro. Staling Cordero Brito}
+\date{}
+
+\usepackage{tikz}
+\usepackage{background}
+\backgroundsetup{
+  scale=1,
+  color=black,
+  opacity=1,
+  angle=0,
+  position=current page.south west,
+  contents={
+    \begin{tikzpicture}[remember picture,overlay]
+      % Esquina inferior izquierda
+      \draw[line width=3pt,blue] (0,0) -- (1.2,1.2);
+      \draw[line width=3pt,red] (0.5,0) -- (1.7,1.2);
+      % Esquina superior derecha
+      \draw[line width=3pt,blue] (\paperwidth,\paperheight) -- (\paperwidth-1.2,\paperheight-1.2);
+      \draw[line width=3pt,red] (\paperwidth-0.5,\paperheight) -- (\paperwidth-1.7,\paperheight-1.2);
+    \end{tikzpicture}
+  }
+}
+
+\begin{document}
+\maketitle
+
+\section*{Objetivo}
+Realizar una revisión de literatura (RL) sobre el tema de la tesis a desarrollar, siguiendo las fases de propuestas en esta guía.
+
+\section*{Fase 1: Búsqueda inicial y registro bibliográfico (10 puntos)}
+\begin{itemize}
+  \item Buscar artículos en bases de datos científicas (WoS, Scopus, Latindex) [opcional: Google Scholar, Latindex y Zenodo].
+  \item Registrar: Título, Autores [Apellido, Nombre (Cordero-Brito, Staling; Rivera, Clotilde))], Año, Fuente, Tipo de publicación, Presencia WoS, Scopus, Latindex (contestar: sí/no)] (opcional Google Scholar, Latindex y Zenodo), DOI.
+\end{itemize}
+
+\section*{Fase 2: Selección de manuscritos para lectura completa (5 puntos)}
+\begin{itemize}
+  \item Evaluar si el artículo está indexado, tiene relación directa con el tema elegido, propone teorías, modelos o frameworks que contribuyan con la investigación.\\
+  
+  Marcar si es candidato para lectura completa (Sí/No).
+\end{itemize}
+
+\section*{Fase 3: Evaluación crítica de contenido (15 puntos)}
+Responder (Sí / No / Parcial) para cada artículo:
+\begin{enumerate}[label=\arabic*.]
+  \item ¿Los objetivos están claramente definidos?
+  \item ¿El diseño del estudio permite alcanzar los objetivos?
+  \item ¿La problema está bien descrito y justificado?
+  \item ¿Se materializa en teorías, modelos, patrones, etc.?
+  \item ¿Aplica las variables por completo?
+  \item ¿Proporciona un marco para definir diferentes variables a investigar?
+  \item ¿Se basa en experiencias previas?
+  \item ¿Se ha probado en experiencias reales?
+  \item ¿Se discuten problemas asociados?
+  \item ¿Responde adecuadamente a las preguntas de investigación?
+  
+  \begin{tcolorbox}[colback=yellow!20!white,colframe=black,title=Comentario]
+  Realizar una suma total y determinar si se acepta (mínimo 7 respuestas afirmativas) o se rechaza. Escribe un breve comentario.
+    \end{tcolorbox}
+\end{enumerate}
+
+\section*{Fase 4: Análisis temático y clasificación (10 puntos)}
+\begin{itemize}
+  \item Clasificar los artículos según:
+  \begin{itemize}
+    \item Dominio (dependiendo del tema de la tesis)
+    \item Palabras clave(keywords)
+    \item Agregar dos o tres variables imporantes de tu investigación y determina si están presente en los manuscritos (Sí/No)
+    \item Uso de metodología (cualitativa, cuantitativa, mixta)
+    \item Validación teórica o práctica
+  \end{itemize}
+\end{itemize}
+
+\section*{Fase 5: Selección final y síntesis (10 puntos)}
+\begin{itemize}
+  \item Seleccionar entre 5 y 10 artículos más relevantes.
+  \item Redactar un resumen de cada uno (máx. 1 párrafo).
+  \item Justificar la selección.
+\end{itemize}
+
+
+  \begin{tcolorbox}[colback=green!20!white,colframe=black,title=Formato de entrega]
+\begin{itemize}
+  \item Documento en Word o PDF.
+  \item Estructura: Introducción, Desarrollo por fases, Tablas y análisis, Conclusiones, Bibliografía\footnote{formato estilo Chigago} (DOIs).
+\end{itemize}
+\end{tcolorbox}
+
+\end{document}

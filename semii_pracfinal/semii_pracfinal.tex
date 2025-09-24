@@ -1,0 +1,122 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{tcolorbox}
+\usepackage{hyperref}
+\usepackage{geometry} % Paquete para márgenes
+
+% Márgenes más amplios (ajústalos a tu gusto)
+\geometry{
+  top=3cm,
+  bottom=3cm,
+  left=3cm,
+  right=3cm
+}
+
+\tcbset{
+  mydialog/.style={
+    colback=black!90,
+    coltext=yellow!90,
+    colframe=yellow,
+    boxrule=1pt,
+    arc=8pt,
+    left=10pt, right=10pt, top=10pt, bottom=10pt,
+    fonttitle=\bfseries,
+    coltitle=yellow,
+    title=Información de contacto,
+    enhanced,
+    drop shadow,
+    borderline={0.5pt}{0pt}{yellow}
+  }
+}
+
+\title{TRABAJO FINAL:\\ PROYECTO DE TESIS\\ Seminario II}
+\author{Mtro. Staling Cordero-Brito\\
+Historia y Geografía para Educadores}
+
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\section*{Rúbrica de Evaluación (40 puntos)}
+
+\renewcommand{\arraystretch}{1.5}
+\begin{longtable}{|>{\raggedright}p{9cm}|c|}
+\hline
+\textbf{Criterios de Evaluación} & \textbf{Puntos} \\
+\hline
+\multicolumn{2}{|l|}{\textbf{Nota previa}} \\
+Los \textbf{Resumen (palabras clave) e Introducción (con asesor)} deberán incluirse siguiendo las Guías suministradas, 
+pero quedarán \textbf{como borrador}. & -- \\
+\hline
+\multicolumn{2}{|l|}{\textbf{1. Planteamiento del problema (15 pts)}} \\
+Claridad en formulación del problema, delimitación, justificación, objetivos y preguntas de investigación. & 15 \\
+\hline
+\multicolumn{2}{|l|}{\textbf{2. Marco Teórico (12 pts)}} \\
+\textbf{2.1 Relevancia y coherencia con el problema de investigación} & 2 \\
+\textbf{2.2 Calidad y actualidad de las fuentes utilizadas} & 2 \\
+\textbf{2.3 Profundidad en la construcción de categorías analíticas} & 2 \\
+\textbf{2.4 Capacidad crítica y comparativa } & 2 \\
+\textbf{2.5 Articulación con el enfoque} & 2 \\
+\textbf{2.6 Pertinencia con el tema de investigación} & 2 \\
+\hline
+\multicolumn{2}{|l|}{\textbf{3. Metodología (5 pts)}} \\
+Coherencia entre tipo de investigación; enfoque; diseño; alcance; métodos; técnicas; instrumentos; universo, población y muestra. & 5 \\
+\hline
+\multicolumn{2}{|l|}{\textbf{4. Presentación de Resultados (3 pts)}} \\
+Se presentarán los resultados esperados para poner en contexto al asesor. & 3 \\
+\hline
+\multicolumn{2}{|l|}{\textbf{5. Discusión y Conclusiones (con asesor)}} \\
+Este apartado quedará en borrador, a ser desarrollado con el asesor. & -- \\
+\hline
+\multicolumn{2}{|l|}{\textbf{6. Bibliografía (5 pts)}} \\
+Debe presentarse en estilo Chicago, siguiendo la Guía suministrada. & 5 \\
+\hline
+\multicolumn{1}{|r|}{\textbf{Total}} & \textbf{40} \\
+\hline
+\end{longtable}
+
+
+\begin{tcolorbox}[
+    enhanced,
+    frame hidden,
+    width=0.8\textwidth,
+    boxrule=0pt,
+    colback=gray!20,
+    sharp corners,
+    borderline={0.5pt}{0pt}{black!70},
+    drop shadow
+  ]
+
+  % Parte superior (gris oscuro)
+  \begin{tcolorbox}[
+      colback=gray!40,
+      coltext=white,
+      boxrule=0pt,
+      sharp corners,
+      left=5pt,right=5pt,top=5pt,bottom=5pt
+    ]
+    \centering
+    \textbf{Mtro. Staling Cordero-Brito}
+  \end{tcolorbox}
+
+  % Parte inferior (gris claro)
+  \begin{tcolorbox}[
+      colback=gray!15,
+      coltext=black,
+      boxrule=0pt,
+      sharp corners,
+      left=5pt,right=5pt,top=5pt,bottom=5pt
+    ]
+    \centering
+    Maestría en Historia y Geografía para Educadores \\[4pt]
+    Universidad Autónoma de Santo Domingo (UASD) \\[4pt]
+    Correo: \texttt{scordero49@uasd.edu.do}
+  \end{tcolorbox}
+
+\end{tcolorbox}
+
+\end{document}

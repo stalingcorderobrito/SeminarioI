@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2025.3.28)  1 APR 2025 06:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2025.3.28)  4 APR 2025 20:03
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -690,6 +690,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [2]
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 92.
+ (C:\Users\stali\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmr.fd
+File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -698,12 +702,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[3{C:/Users/stali/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}]
-Underfull \hbox (badness 10000) in paragraph at lines 197--205
-
- []
-
-
+[3{C:/Users/stali/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C:/Users/stali/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}]
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -713,17 +712,22 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [4]
-Overfull \hbox (5.17598pt too wide) in paragraph at lines 226--226
+Underfull \hbox (badness 10000) in paragraph at lines 207--215
+
+ []
+
+
+Overfull \hbox (5.17598pt too wide) in paragraph at lines 236--236
 []\T1/lmr/bx/n/17.28 Estrategia de Di-vul-ga-ción de los Re-sul-ta-dos (op-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 228--231
+Underfull \hbox (badness 10000) in paragraph at lines 238--241
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 243--246
+Underfull \hbox (badness 10000) in paragraph at lines 253--256
 
  []
 
@@ -737,24 +741,27 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [5]
-Underfull \hbox (badness 10000) in paragraph at lines 304--304
+Underfull \hbox (badness 10000) in paragraph at lines 314--314
 []|\T1/lmr/bx/n/12 Inversión
  []
 
 
-Underfull \hbox (badness 2111) in paragraph at lines 304--304
+Underfull \hbox (badness 2111) in paragraph at lines 314--314
 []|\T1/lmr/bx/n/12 Etapa del Pro-
  []
 
 
-Underfull \hbox (badness 1946) in paragraph at lines 304--304
+Underfull \hbox (badness 1946) in paragraph at lines 314--314
 []|\T1/lmr/m/n/12 Recursos (Equi-pos, ma-te-
  []
 
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 314.
-(C:\Users\stali\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmr.fd
-File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
+No file Guia_SemI.bbl.
+
+Underfull \hbox (badness 10000) in paragraph at lines 331--336
+
+ []
+
+
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -763,14 +770,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[6{C:/Users/stali/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}]
-No file Guia_SemI.bbl.
-
-Underfull \hbox (badness 10000) in paragraph at lines 365--370
-
- []
-
-
+[6]
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -797,20 +797,20 @@ LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
 Package rerunfilecheck Info: File `Guia_SemI.out' has not changed.
-(rerunfilecheck)             Checksum: 24B491AB614B7A4038066D10C168E7D2;3607.
+(rerunfilecheck)             Checksum: 0F96521640198058DF3B993E0011DD96;3735.
  ) 
 Here is how much of TeX's memory you used:
- 23579 strings out of 473530
- 445676 string characters out of 5714794
- 840892 words of memory out of 5000000
- 46375 multiletter control sequences out of 15000+600000
+ 23581 strings out of 473530
+ 445707 string characters out of 5714794
+ 840965 words of memory out of 5000000
+ 46376 multiletter control sequences out of 15000+600000
  610395 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,11n,91p,845b,802s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,11n,91p,909b,802s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/stali/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/stali/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/stali/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/stali/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri12.pfb>
-Output written on Guia_SemI.pdf (8 pages, 145030 bytes).
+Output written on Guia_SemI.pdf (8 pages, 146143 bytes).
 PDF statistics:
- 180 PDF objects out of 1000 (max. 8388607)
- 31 named destinations out of 1000 (max. 500000)
+ 182 PDF objects out of 1000 (max. 8388607)
+ 32 named destinations out of 1000 (max. 500000)
  165 words of extra memory for PDF output out of 10000 (max. 10000000)
 
